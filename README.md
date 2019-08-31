@@ -9,7 +9,11 @@ YAML-packet-generator contains 2 files : packet_generator.yaml (Make changes in 
 
 packet_generator.py generates packets flexibly without relying on specific functions for each packet headers. 
 
+Flexibility: Any packet can be generated(Assuming it is supported by scapy). Can generate unusual packets (ex. TCP header encapsulated into UDP or n number of UDP headers inside single packet). This would be helpful for testing/QA personnel.
+
 Scalability: Very flexible as well as scalable. No need to add extra header in future because this code will support all the headers and packet definitions supported by scapy module.
+
+
 
 
 
