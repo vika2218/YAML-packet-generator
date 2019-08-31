@@ -9,12 +9,12 @@ def geneatingPacket():
   h= []
   for p in dict1:
     for i in dict1[p]:
-        if i != "Attributes":
+
             for j in dict1[p][i]:
                 exec(j)
 
     for i in dict1[p]:
-        if not i == 'Packet' and i != 'Attributes':
+        if not i == 'Packet' :
             hdr = eval(i)()			# Creating raw headers ex. hdr= IP() before giving the attributes
             for j in dict1[p][i]:		# This will add attributes to already created raw headers
                     k='hdr.'+j		# ex. hdr.src='1.1.1.1'
