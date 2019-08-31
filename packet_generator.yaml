@@ -1,0 +1,11 @@
+---
+Packet1 :
+  IP :
+   - src = "192.168.1.248"
+   - dst = "7.7.7.7"
+
+  ICMP :
+   - type= "echo-request"
+
+
+
